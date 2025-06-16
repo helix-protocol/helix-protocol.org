@@ -17,8 +17,8 @@ export default function Home() {
           HELIX Protocol
         </h1>
         <p className="max-w-2xl text-center text-lg sm:text-xl text-slate-700 dark:text-slate-200 mt-2">
-          Rethinking public administration for a privacy-first, zk-native
-          Europe. <br />
+          Rethinking public administration for a privacy-first, zk-native world.{" "}
+          <br />
           <span className="text-base text-slate-500 dark:text-slate-400">
             Open-source infrastructure for data sovereignty, starting with
             FASTER and beyond.
@@ -44,14 +44,17 @@ export default function Home() {
         {/* Hero Section */}
         <section className="w-full max-w-3xl flex flex-col items-center gap-6 mt-4">
           <h2 className="text-2xl sm:text-3xl font-semibold text-center">
-            Europe's privacy-first protocol for public data
+            The privacy-first protocol for public data
           </h2>
           <p className="text-center text-base sm:text-lg text-slate-600 dark:text-slate-300">
             Helix is an open-source protocol for secure, privacy-preserving data
             exchange and compliance, built on zero-knowledge (zk) cryptography.
             Our mission: empower citizens, institutions, and the financial
             industry with transparent, resilient, and privacy-protecting digital
-            infrastructure.
+            infrastructure. <br />
+            <br />
+            We are a global community of developers, researchers, and
+            policymakers working to build a more secure and private future.
           </p>
         </section>
 
