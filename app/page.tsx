@@ -1,102 +1,184 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-white to-slate-100 dark:from-black dark:to-slate-900 font-[family-name:var(--font-geist-sans)]">
+      <header className="w-full flex flex-col items-center pt-12 pb-8 gap-4">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
+          src="/logo.png"
+          alt="Helix logo"
+          width={80}
+          height={80}
           priority
+          className="rounded-xl shadow-lg"
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-center bg-gradient-to-r from-blue-600 to-fuchsia-600 bg-clip-text text-transparent">
+          HELIX Protocol
+        </h1>
+        <p className="max-w-2xl text-center text-lg sm:text-xl text-slate-700 dark:text-slate-200 mt-2">
+          Rethinking public administration for a privacy-first, zk-native
+          Europe. <br />
+          <span className="text-base text-slate-500 dark:text-slate-400">
+            Open-source infrastructure for data sovereignty, starting with
+            FASTER and beyond.
+          </span>
+        </p>
+        <div className="mt-4 flex flex-wrap gap-2 justify-center">
+          <Link
+            href="#zk-explained"
+            className="rounded-full bg-blue-600 text-white px-5 py-2 text-sm font-medium shadow hover:bg-blue-700 transition"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            What is zk?
+          </Link>
+          <Link
+            href="/faster"
+            className="rounded-full border border-blue-600 text-blue-600 px-5 py-2 text-sm font-medium hover:bg-blue-50 dark:hover:bg-slate-800 transition"
           >
-            Read our docs
-          </a>
+            How Helix realizes FASTER
+          </Link>
         </div>
+      </header>
+
+      <main className="flex-1 flex flex-col items-center px-4 gap-16">
+        {/* Hero Section */}
+        <section className="w-full max-w-3xl flex flex-col items-center gap-6 mt-4">
+          <h2 className="text-2xl sm:text-3xl font-semibold text-center">
+            Europe's privacy-first protocol for public data
+          </h2>
+          <p className="text-center text-base sm:text-lg text-slate-600 dark:text-slate-300">
+            Helix is an open-source protocol for secure, privacy-preserving data
+            exchange and compliance, built on zero-knowledge (zk) cryptography.
+            Our mission: empower citizens, institutions, and the financial
+            industry with transparent, resilient, and privacy-protecting digital
+            infrastructure.
+          </p>
+        </section>
+
+        {/* ZK Explained */}
+        <section
+          id="zk-explained"
+          className="w-full max-w-2xl flex flex-col items-center gap-4 bg-white/80 dark:bg-slate-900/80 rounded-xl shadow p-6 border border-slate-100 dark:border-slate-800"
+        >
+          <h3 className="text-xl font-semibold text-blue-600">
+            What is Zero-Knowledge (zk)?
+          </h3>
+          <p className="text-base text-slate-700 dark:text-slate-200 text-center">
+            Zero-knowledge proofs (zk) are cryptographic techniques that let you
+            prove something is true without revealing the underlying data. In
+            Helix, zk enables privacy-first compliance: institutions can verify
+            tax residency or ownership without ever seeing your private
+            information.{" "}
+            <span className="font-medium">
+              You stay in control of your data.
+            </span>
+          </p>
+        </section>
+
+        {/* Linktree Section */}
+        <section className="w-full max-w-lg flex flex-col items-center gap-2 mt-2">
+          <h4 className="text-lg font-semibold mb-2">Resources & Community</h4>
+          <ul className="w-full flex flex-col gap-2">
+            <li>
+              <a
+                href="https://docs.google.com/presentation/d/1GFFNHBGaw_4QwrMDfTZxloqTIn44HTGZqdf3npuQXJc/edit?slide=id.gedcb0a4945_0_57#slide=id.gedcb0a4945_0_57"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-3 bg-white dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-slate-700 transition"
+              >
+                <span className="font-medium">Slide deck:</span> FASTER
+                Implementation Forum (2025-02-03)
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://docs.google.com/document/d/1it0RDgahXhiEDkc6JS_bPHJ75a9s8P-IL7eGd-bfw-I/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-3 bg-white dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-slate-700 transition"
+              >
+                <span className="font-medium">Project brief:</span> Helix
+                (2025-05-08)
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://docs.google.com/presentation/d/1c7kwl1ogZnUXx_K6cf5VGyEBGh13ocBPlX5sPeejoaw/edit?slide=id.p#slide=id.p"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-3 bg-white dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-slate-700 transition"
+              >
+                <span className="font-medium">Presentation:</span> W3PN HACKS
+                (2025-06-15)
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://t.me/+ChfLKpalgGFkYzZi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-3 bg-white dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-slate-700 transition"
+              >
+                <span className="font-medium">Telegram group</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://github.com/helix-protocol"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-3 bg-white dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-slate-700 transition"
+              >
+                <span className="font-medium">GitHub organization</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        {/* Supported by Section */}
+        <section className="w-full max-w-lg flex flex-col items-center gap-2 mt-8">
+          <h4 className="text-lg font-semibold mb-2">
+            Supported and funded by
+          </h4>
+          <div className="flex flex-row items-center gap-8 justify-center mt-2">
+            <a
+              href="https://divizend.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Divizend"
+              className="transition-opacity hover:opacity-80"
+            >
+              <Image
+                src="/divizend.svg"
+                alt="Divizend logo"
+                width={120}
+                height={32}
+                className="h-8 w-auto grayscale opacity-60"
+              />
+            </a>
+            {/* Add more logos here as needed */}
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+
+      <footer className="w-full flex flex-col sm:flex-row gap-4 items-center justify-center py-8 border-t border-slate-200 dark:border-slate-800 mt-12 text-sm text-slate-500 dark:text-slate-400">
+        <Link
+          href="https://github.com/helix-protocol/helix-protocol.org"
           target="_blank"
           rel="noopener noreferrer"
+          className="hover:underline"
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          GitHub
+        </Link>
+        <span className="hidden sm:inline">·</span>
+        <Link
+          href="http://divizend.com/imprint"
           target="_blank"
           rel="noopener noreferrer"
+          className="hover:underline"
         >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+          Imprint (Divizend)
+        </Link>
       </footer>
     </div>
   );
