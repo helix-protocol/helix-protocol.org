@@ -84,6 +84,17 @@ export default function Home() {
           <ul className="w-full flex flex-col gap-2">
             <li>
               <a
+                href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202500050"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-3 bg-white dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-slate-700 transition"
+              >
+                <span className="font-medium">EU Directive:</span> FASTER
+                (2024-12-10)
+              </a>
+            </li>
+            <li>
+              <a
                 href="https://docs.google.com/presentation/d/1GFFNHBGaw_4QwrMDfTZxloqTIn44HTGZqdf3npuQXJc/edit?slide=id.gedcb0a4945_0_57#slide=id.gedcb0a4945_0_57"
                 target="_blank"
                 rel="noopener noreferrer"
