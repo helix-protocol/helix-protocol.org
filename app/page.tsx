@@ -163,6 +163,16 @@ export default function Home() {
                 <span className="font-medium">Global Tax Law Project</span>
               </a>
             </li>
+            <li>
+              <a
+                href="https://docs.google.com/document/d/1stLNFe9nlQwXD1WWUD4EuLMPLMael7rP7VWsOzs4itQ/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-3 bg-white dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-slate-700 transition"
+              >
+                <span className="font-medium">Prisma</span>
+              </a>
+            </li>
           </ul>
         </section>
 
