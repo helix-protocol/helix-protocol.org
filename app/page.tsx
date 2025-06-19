@@ -149,6 +149,23 @@ export default function Home() {
           </ul>
         </section>
 
+        {/* Resident Projects Section */}
+        <section className="w-full max-w-lg flex flex-col items-center gap-2 mt-8">
+          <h4 className="text-lg font-semibold mb-2">Resident Projects</h4>
+          <ul className="w-full flex flex-col gap-2">
+            <li>
+              <a
+                href="https://tax.helix-protocol.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-3 bg-white dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-slate-700 transition"
+              >
+                <span className="font-medium">Global Tax Law Project</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
         {/* Supported by Section */}
         <section className="w-full max-w-lg flex flex-col items-center gap-2 mt-8">
           <h4 className="text-lg font-semibold mb-2">
