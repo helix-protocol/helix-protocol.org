@@ -146,6 +146,16 @@ export default function Home() {
                 <span className="font-medium">GitHub organization</span>
               </a>
             </li>
+            <li>
+              <a
+                href="https://x.com/helix_protocol"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-3 bg-white dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-slate-700 transition"
+              >
+                <span className="font-medium">X (Twitter)</span>
+              </a>
+            </li>
           </ul>
         </section>
 
