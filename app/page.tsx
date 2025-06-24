@@ -40,6 +40,35 @@ export default function Home() {
         </div>
       </header>
 
+      {/* RfP Call-to-Action */}
+      <section className="w-full flex justify-center px-4 mt-2">
+        <a
+          href="https://docs.google.com/document/d/10hy5gGfkUQp-RMlKUM7DsemtebkBaYyE07-QAOQgxWc/edit?tab=t.0"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-3 rounded-xl border-2 border-fuchsia-600 bg-gradient-to-r from-fuchsia-600 to-blue-600 px-6 py-4 shadow-lg hover:scale-[1.03] transition-transform focus:outline-none focus:ring-2 focus:ring-fuchsia-400"
+          style={{ zIndex: 10 }}
+        >
+          <span className="text-white text-lg font-bold drop-shadow-sm">
+            🚀 RfP: Development of MVP for FASTER on the HELIX Protocol
+          </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="currentColor"
+            className="w-6 h-6 text-white"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M17.25 6.75L6.75 17.25M17.25 17.25V6.75H6.75"
+            />
+          </svg>
+        </a>
+      </section>
+
       <main className="flex-1 flex flex-col items-center px-4 gap-16">
         {/* Hero Section */}
         <section className="w-full max-w-3xl flex flex-col items-center gap-6 mt-4">
@@ -124,6 +153,18 @@ export default function Home() {
               >
                 <span className="font-medium">Presentation:</span> W3PN HACKS
                 (2025-06-15)
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://docs.google.com/document/d/10hy5gGfkUQp-RMlKUM7DsemtebkBaYyE07-QAOQgxWc/edit?tab=t.0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full rounded-lg border border-fuchsia-600 px-4 py-3 bg-white dark:bg-slate-800 hover:bg-fuchsia-50 dark:hover:bg-fuchsia-950 transition font-semibold text-fuchsia-700 dark:text-fuchsia-400 shadow"
+              >
+                <span className="font-medium">RfP:</span> Development of MVP for
+                FASTER on the HELIX Protocol (2025-06-24)
               </a>
             </li>
             <li>
