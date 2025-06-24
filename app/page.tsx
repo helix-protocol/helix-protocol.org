@@ -46,11 +46,14 @@ export default function Home() {
           href="https://docs.google.com/document/d/10hy5gGfkUQp-RMlKUM7DsemtebkBaYyE07-QAOQgxWc/edit?tab=t.0"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-3 rounded-xl border-2 border-fuchsia-600 bg-gradient-to-r from-fuchsia-600 to-blue-600 px-6 py-4 shadow-lg hover:scale-[1.03] transition-transform focus:outline-none focus:ring-2 focus:ring-fuchsia-400"
+          className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 rounded-xl border-2 border-fuchsia-600 bg-gradient-to-r from-fuchsia-600 to-blue-600 px-6 py-4 shadow-lg hover:scale-[1.03] transition-transform focus:outline-none focus:ring-2 focus:ring-fuchsia-400"
           style={{ zIndex: 10 }}
         >
           <span className="text-white text-lg font-bold drop-shadow-sm">
-            🚀 RfP: Development of MVP for FASTER on the HELIX Protocol
+            RfP: Development of MVP for FASTER on the HELIX Protocol
+          </span>
+          <span className="text-xs sm:text-sm font-semibold text-fuchsia-100 bg-fuchsia-700/80 rounded px-2 py-1 ml-0 sm:ml-2 mt-1 sm:mt-0 tracking-wide shadow">
+            Deadline: August 4, 2025
           </span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
