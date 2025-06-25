@@ -37,40 +37,16 @@ export default function Home() {
           >
             How Helix realizes FASTER
           </Link>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdx4TBMXL7prWPCbVwvARSr2V7kMPR4JPaLKOY569v9s3a8Ew/viewform?usp=header"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full border border-blue-600 text-blue-600 px-5 py-2 text-sm font-medium hover:bg-blue-50 dark:hover:bg-slate-800 transition"
+          >
+            Subscribe to FASTER newsletter
+          </a>
         </div>
       </header>
-
-      {/* RfP Call-to-Action */}
-      <section className="w-full flex justify-center px-4 mt-2">
-        <a
-          href="https://docs.google.com/document/d/10hy5gGfkUQp-RMlKUM7DsemtebkBaYyE07-QAOQgxWc/edit?tab=t.0"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 rounded-xl border-2 border-fuchsia-600 bg-gradient-to-r from-fuchsia-600 to-blue-600 px-6 py-4 shadow-lg hover:scale-[1.03] transition-transform focus:outline-none focus:ring-2 focus:ring-fuchsia-400"
-          style={{ zIndex: 10 }}
-        >
-          <span className="text-white text-lg font-bold drop-shadow-sm">
-            RfP: Development of MVP for FASTER on the HELIX Protocol
-          </span>
-          <span className="text-xs sm:text-sm font-semibold text-fuchsia-100 bg-fuchsia-700/80 rounded px-2 py-1 ml-0 sm:ml-2 mt-1 sm:mt-0 tracking-wide shadow">
-            Deadline: August 4, 2025
-          </span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="w-6 h-6 text-white"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M17.25 6.75L6.75 17.25M17.25 17.25V6.75H6.75"
-            />
-          </svg>
-        </a>
-      </section>
 
       <main className="flex-1 flex flex-col items-center px-4 gap-16">
         {/* Hero Section */}
@@ -105,7 +81,7 @@ export default function Home() {
             tax residency or ownership without ever seeing your private
             information.{" "}
             <span className="font-medium">
-              You stay in control of your data.
+              End customers stay in control of their data.
             </span>
           </p>
         </section>
@@ -167,7 +143,7 @@ export default function Home() {
                 className="block w-full rounded-lg border border-fuchsia-600 px-4 py-3 bg-white dark:bg-slate-800 hover:bg-fuchsia-50 dark:hover:bg-fuchsia-950 transition font-semibold text-fuchsia-700 dark:text-fuchsia-400 shadow"
               >
                 <span className="font-medium">RfP:</span> Development of MVP for
-                FASTER on the HELIX Protocol (2025-06-24)
+                FASTER on the HELIX Protocol (2025-06-24, deadline 2025-08-04)
               </a>
             </li>
             <li>
@@ -200,6 +176,16 @@ export default function Home() {
                 <span className="font-medium">X (Twitter)</span>
               </a>
             </li>
+            <li>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdx4TBMXL7prWPCbVwvARSr2V7kMPR4JPaLKOY569v9s3a8Ew/viewform?usp=header"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-3 bg-white dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-slate-700 transition"
+              >
+                <span className="font-medium">FASTER newsletter sign-up</span>
+              </a>
+            </li>
           </ul>
         </section>
 
@@ -209,22 +195,22 @@ export default function Home() {
           <ul className="w-full flex flex-col gap-2">
             <li>
               <a
+                href="/faster"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-3 bg-white dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-slate-700 transition"
+              >
+                <span className="font-medium">FASTER</span>
+              </a>
+            </li>
+            <li>
+              <a
                 href="https://tax.helix-protocol.org/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-3 bg-white dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-slate-700 transition"
               >
                 <span className="font-medium">Global Tax Law Project</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://docs.google.com/document/d/1stLNFe9nlQwXD1WWUD4EuLMPLMael7rP7VWsOzs4itQ/edit?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-3 bg-white dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-slate-700 transition"
-              >
-                <span className="font-medium">Prisma</span>
               </a>
             </li>
           </ul>

@@ -72,6 +72,16 @@ export default function FasterPage() {
           </p>
         </section>
       </main>
+      <div className="w-full flex justify-center mt-8 mb-4">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdx4TBMXL7prWPCbVwvARSr2V7kMPR4JPaLKOY569v9s3a8Ew/viewform?usp=header"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block rounded-full bg-blue-600 text-white text-lg font-bold px-8 py-4 shadow-lg hover:bg-blue-700 transition border-2 border-blue-700"
+        >
+          Sign up for the FASTER newsletter
+        </a>
+      </div>
       <footer className="w-full flex flex-col sm:flex-row gap-4 items-center justify-center py-8 border-t border-slate-200 dark:border-slate-800 mt-12 text-sm text-slate-500 dark:text-slate-400">
         <Link href="/" className="hover:underline">
           Helix Home
