@@ -130,8 +130,19 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="block w-full rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-3 bg-white dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-slate-700 transition"
               >
-                <span className="font-medium">Presentation:</span> W3PN HACKS
+                <span className="font-medium">Slide deck:</span> W3PN HACKS
                 (2025-06-15)
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://docs.google.com/presentation/d/15wg8Ixo4J9p2Xi_JPxRPp58eYtjX-zL5DcLYpqrJGMg/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-3 bg-white dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-slate-700 transition"
+              >
+                <span className="font-medium">Slide deck:</span> AFBS
+                Roundtable: The Road to FASTER (2025-06-26)
               </a>
             </li>
 
